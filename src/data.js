@@ -9,7 +9,7 @@ export const projects = [
   },
   {
     title: "Visualization",
-    technologies: "Unity, Oculus Rift",
+    technologies: "Unity, Oculus Rift, C++",
     description:
       "Study of gaze",
     image: "./eye-gaze.png",
@@ -17,27 +17,20 @@ export const projects = [
   },
   {
     title: "Stamped",
-    technologies: "Figma",
+    technologies: "Figma, Moodboard, Wireframes",
     description:
       "Concept of app",
     image: "./Stamped.gif",
     role: "Developer",
   },
   
-  {
-    title: "CryptoViz - An information visualization of cryptocurrencies",
-    technologies: "React, CSS, Javascript",
-    description:
-      "How hacks have affected the value of cryptocurrencies",
-    image: "./project-1.gif",
-    role: "Data aggregator",
-  },
+  
   {
     title: "Pepper - Battery Use Case",
     technologies: "Pepper API, Excel",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-2.gif",
+    image: "./Battery.gif",
     role: "Business stakeholder, refined use case and structured the logic together with the project leader",
   },
   {
@@ -45,10 +38,10 @@ export const projects = [
     technologies: "Pepper API",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-2.gif",
+    image: "./Covid.gif",
     role: "Business stakeholder, refined use case",
   },
-  {
+  /*{
     title: "Schoolday",
     technologies: "Java EE, mySQL, Javascript",
     description:
@@ -63,7 +56,14 @@ export const projects = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     image: "./project-2.gif",
     role: "Coder, wrote the supervised and unsupervised learning algoritms",
-  },
+  },{
+    title: "CryptoViz - An information visualization of cryptocurrencies",
+    technologies: "React, CSS, Javascript",
+    description:
+      "How hacks have affected the value of cryptocurrencies",
+    image: "./project-1.gif",
+    role: "Data aggregator",
+  },*/
 ];
 /*1 - Fundamental Awareness (basic knowledge)
 2 - Novice (limited experience)

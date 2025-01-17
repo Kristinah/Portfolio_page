@@ -1,7 +1,49 @@
 import { projects } from "../data";
 
 export default function Projects() {
-  return (
+  return(
+  <section id="projects" className="text-gray-400 bg-gray-800 body-font">
+    <div className="container px-5 py-10 mx-auto text-center lg:px-40">
+        <div className="flex flex-col w-full mb-20">
+          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
+           Projects
+          </h1>
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
+            fuga dolore.
+          </p>
+        </div>
+        </div>
+    <div className="flex flex-wrap -m-4">
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mx-auto">
+    {projects.map((project) => (
+      <a
+      href={project.role}
+      key={project.image}
+      >
+      <div className="w-full rounded-lg border shadow-sm overflow-hidden max-w-xs mx-auto text-center">
+      <img src={project.image} alt="image" className="w-[calc(100%-16px)] h-max rounded m-2" />
+      <div className="w-full h-max rounded px-3.5 py-2.5">
+      <h1 className="title-font text-lg font-medium text-white mb-3">
+                    {project.title}
+                  </h1>
+        <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">{project.technologies}</h2>
+        
+        <p className="leading-relaxed">{project.description}</p>
+      </div>
+      </div>
+      </a>
+    ))}
+    
+    </div>
+    </div>
+    
+     </section>
+  );
+
+
+  /*return (
 
     <section id="projects" className="text-gray-400 bg-gray-800 body-font">
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
@@ -42,5 +84,5 @@ export default function Projects() {
         </div>
       </div>
     </section>
-  );
+  );*/
 }
