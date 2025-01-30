@@ -3,9 +3,9 @@ export default function Contact() {
   return (
     <section id="contact" className="relative">
       
-      <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
+      <div className="container px-5 py-5 mx-auto flex sm:flex-nowrap flex-wrap">
         
-        <div className="lg:w-2/3 md:w-1/2 bg-gray-800 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+        <div className="lg:w-2/3 md:w-1/2 bg-slate-800 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
               <h1 className="title-font sm:text-xl text-3xl mb-4 font-medium text-white">Contact Info</h1>
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">

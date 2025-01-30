@@ -1,26 +1,17 @@
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import Home from "./Pages/Home";
+import { Route, Routes } from 'react-router-dom'
+import Stamped from "./Pages/Stamped";
+
 
 export default function App() {
   return (
-    <main className="text-gray-400 bg-cyan-900 body-font">
-
-      <Navbar />
-      <About />
-      <Projects />
-      <Skills />
-      <Contact />
-      
-    </main>
+    <div>
+      <Routes>
+        <Route/>
+        <Route path='/' element={<Home/>} />
+        <Route path='/stamped' element={<Stamped/>}/>
+        <Route/>
+      </Routes>
+    </div>
   );
 }
-
-/*<About />
-      <Projects />
-      <Skills />
-      <Contact />
-      */
-         /*<img scr="Copy.jpg" alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" />*/
