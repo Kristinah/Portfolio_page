@@ -77,13 +77,14 @@ export default function Projects() {
     )}
   </div>
              <div className="flex-1 flex flex-col">
-              <button
+              <div className="flex items-center justify-between mb-4">
+            <h2 className="text-2xl font-bold text-white" >{selectedProject.title}</h2>
+            <button
               onClick={() => setSelectedProject(null)}
-    className="absolute top-4 right-4 ml-2 px-2 py-1 rounded hover:bg-hover hover:text-white transition rounder-lg"
+    className="px-2 py-1 rounded hover:bg-hover hover:text-white transition rounder-lg"
   >
     ✕
-  </button>
-            <h2 className="text-2xl font-bold mb-2 text-white" >{selectedProject.title}</h2>
+  </button></div>
             <p className="text-green-400 font-semibold mb-2">
               {selectedProject.technologies}
             </p>

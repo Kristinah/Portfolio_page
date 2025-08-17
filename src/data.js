@@ -11,9 +11,9 @@ export const projects = [
     link:"https://clawcraft.netlify.app/",
   },
   {
-    title: "Gaze interaction in human-human and human-robot face-to-face cooperation",
+    title: "VR Eye-Tracking Study",
     technologies: "Unity, Oculus Rift, C++, User Study",
-    summary:"VR Eye-Gaze Tracking Study, where we used Unity together with Oculus Rift to explore how environmental complexity impacts cognitive load and efficiency in visual search tasks.",
+    summary:"Conducted a VR eye-tracking study where we used Unity together with Oculus Rift to explore how environmental complexity impacts cognitive load and efficiency in visual search tasks.",
     description:
       "VR Eye-Gaze Tracking Study, which explores the impact of environmental complexity on cognitive load and efficiency in visual search tasks. This project gave me hands-on experience in coding in Unity and using Oculus Rift for user studies. We created two scenes in Unity, one simple with few objects and one complex with more ojects. The users where then tasked to find three objects in the scene by looking at them.",
     image: "/Portfolio_page/DM2350_complex_environment.png",
@@ -37,7 +37,7 @@ export const projects = [
   
   
   {
-    title: "Pepper - Battery Use Case",
+    title: "Pepper - Battery",
     technologies: "Pepper API, Excel, User Study",
     summary: "In a project together with Husqvarna and Sigma, we created an interactive app for customers to help them choose which battery product suits their needs.",
     description:
@@ -48,7 +48,7 @@ export const projects = [
     link:"",
   },
   {
-    title: "Pepper - Covid Use Case",
+    title: "Pepper - Covid",
     technologies: "Pepper API, User Study",
     summary:"In 2020, I was part of a project with Husqvarna to develop another application for Pepper. This time Pepper informs customers about the covid pandemic and can also help guide them in the store.",
     description:
