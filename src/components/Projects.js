@@ -1,10 +1,116 @@
 import { projects } from "../data";
 import { Link } from "react-router";
+import { useState } from "react";
 
 
 export default function Projects() {
+  const [selectedProject, setSelectedProject] = useState(null);
   return(
-  <section id="projects" className="text-gray-400 bg-slate-800 body-font">
+    <section id="projects" className="text-text bg-background body-font">
+    <div className="container px-5 py-20 mx-auto text-center lg:px-40">
+        <div className="flex flex-col w-full">
+          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
+           Projects
+          </h1>
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+          Here are some of the projects I've been involved in, where I've focused on creating engaging, fun, and user-friendly applications. My goal is to always design with the user experience at the forefront.
+          </p>
+        </div>
+        </div>
+
+    <div className="flex flex-wrap -m-4">
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 mx-auto">
+    {projects.map((project) => (
+      <div
+              key={project.title}
+              onClick={() => setSelectedProject(project)}
+              className="cursor-pointer w-full h-full p-2 shadow-xl bg-secondary hover:bg-background rounded-lg overflow-hidden max-w-md mx-auto transition-all hover:scale-105"
+            >
+      <div className="flex flex-col h-full">
+      <img src={project.image} alt="image" className="h-80 w-[calc(100%-16px)] m-2 object-fill object-cover rounded bg-stone-900 mb-2" />
+      
+      <div className="w-full h-max rounded px-3.5 py-2.5 flex flex-col flex-grow">
+      <h1 className="title-font text-xl font-medium text-white mb-3 text-center">
+                    {project.title}
+                  </h1>
+        <h2 className="tracking-widest text-center text-sm title-font font-medium text-green-400 mb-1">{project.technologies}</h2>
+        <p className="leading-relaxed ">{project.summary}
+        
+        </p>
+      </div>
+        <div className="mb-2 text-center">
+        {/*<button className="inline-block text-center text-white py-1 px-2 focus:outline-none hover:bg-white hover:text-black rounded-lg text-lg">View Project</button>*/}
+        <button className="inline-block text-center py-1 px-2 focus:outline-none hover:bg-hover hover:text-white rounded-lg text-lg">View Project</button>
+        </div></div>
+      
+      </div>
+    
+    ))}
+    </div>
+    
+    </div>
+    {/* Enlarged Project Modal */}
+      {selectedProject && (
+        <div
+          onClick={() => setSelectedProject(null)}
+          className="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex justify-center items-center z-50"
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="text-text bg-background rounded-lg max-w-2xl w-full p-6 relative flex flex-col md:flex-row gap-6"
+          >
+  <div className="flex-1 flex flex-col gap-2">
+    {selectedProject.secimage && (
+      <img
+        src={selectedProject.secimage}
+        alt="Project screenshot"
+        className="w-full h-auto rounded-lg object-cover"
+      />
+    )}
+
+    {selectedProject.video && (
+      <img
+        src={selectedProject.video}
+        controls
+        className="w-full h-auto rounded-lg object-cover"
+      />
+    )}
+  </div>
+             <div className="flex-1 flex flex-col">
+              <button
+              onClick={() => setSelectedProject(null)}
+    className="absolute top-4 right-4 ml-2 px-2 py-1 rounded hover:bg-hover hover:text-white transition rounder-lg"
+  >
+    ✕
+  </button>
+            <h2 className="text-2xl font-bold mb-2 text-white" >{selectedProject.title}</h2>
+            <p className="text-green-400 font-semibold mb-2">
+              {selectedProject.technologies}
+            </p>
+            <p className="text-white font-semibold mb-2">
+              {selectedProject.role}
+            </p>
+            <p className="mb-4">{selectedProject.details || selectedProject.description}</p>
+            <div className="mt-4">
+              {selectedProject.link && (
+    <a
+      href={selectedProject.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+    >
+      Web Page
+    </a>
+  )}
+           
+          </div>
+          </div>
+          </div>
+        </div>
+      )}
+
+     </section>
+  /*<section id="projects" className="text-gray-400 bg-slate-800 body-font">
     <div className="container px-5 py-5 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full">
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
@@ -46,70 +152,8 @@ export default function Projects() {
     </div>
     
   
-     </section>
+     </section>*/
   );
 
 
-  /* <div className="container px-5 py-5 mx-auto text-center"> 
-        <video  width="750" height="500"
-  poster="./Pepper-covid-hero.png"
-  onClick={e => e.target.play()} 
-  src="./Stamped-video.mp4">
-</video>
-</div>
-</video>
-  <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
-  <img className="size-40 object-scale-down" src="./Pepper-covid-hero.png" alt="ChitChat Logo" />
-  <div>
-    <div class="text-xl font-medium text-black dark:text-white">ChitChat</div>
-    <p class="text-gray-500 dark:text-gray-400">You have a new message!</p>
-  </div>
-</div>
-</div>
-  <div className="inline-flex text-center text-white border-2 border-white shadow-xl py-1 px-2 focus:outline-none hover:bg-white hover:text-black rounded-lg text-lg">
-            <Link to="/stamped">Stamped</Link>
-        
-        </div> 
-  return (
-
-    <section id="projects" className="text-gray-400 bg-gray-800 body-font">
-      <div className="container px-5 py-10 mx-auto text-center lg:px-40">
-        <div className="flex flex-col w-full mb-20">
-          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-           Projects
-          </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-            fuga dolore.
-          </p>
-        </div>
-        <div className="flex flex-wrap -m-4">
-          {projects.map((project) => (
-            <a
-              href={project.role}
-              key={project.image}
-              className="sm:w-1/2 w-100 p-4">
-              <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={project.image}
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-800 opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
-                    {project.technologies}
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-white mb-3">
-                    {project.title}
-                  </h1>
-                  <p className="leading-relaxed">{project.description}</p>
-                </div>
-              </div>
-            </a>
-          ))}
-        </div>
-      </div>
-    </section>
-  );*/
 }

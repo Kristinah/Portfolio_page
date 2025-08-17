@@ -7,17 +7,29 @@ import Background from "../components/Background";
 
 
 
-export default function App() {
+export default function Home() {
   return (
-    <main className="text-gray-400 bg-slate-800 body-font">
+    <main className="text-text bg-background body-font">
       <Navbar />
-      <Background />
-      <About />
-      <Projects />
-      <Skills />
-      <Contact />
+      
+      <section id="about">
+        <About />
+      </section>
+
+      <section id="projects">
+        <Projects />
+      </section>
+
+      <section id="skills">
+        <Skills />
+      </section>
+
+      <section id="contact">
+        <Contact />
+        </section>
 
       
     </main>
   );
 }
+//<Background />
