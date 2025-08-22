@@ -5,7 +5,7 @@ export const projects = [
     summary:"Real time strategy game where cat and dogs fight for supremacy!",
     description:
       "I was mainly responsible for the game and level design. I created moodboard for five different themes, found suitable assets for the theme and created three distinct maps in GoDot. I also created a persona for our target audience. I was responsible for the game narrative and partly-responsible for the game development document.",
-    image: "/Portfolio_page/clawCraft-hero.png",
+    image: "/Portfolio_page/ClawCraft_Hero.png",
     secimage:"/Portfolio_page/ClawCraft_Persona.png",
     role: "Level designer and head of game concept",
     link:"https://clawcraft.netlify.app/",
