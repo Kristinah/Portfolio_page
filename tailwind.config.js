@@ -4,12 +4,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-      primary: '#ffffffff', // Raspberry
+      primary: '#ffffff', // Raspberry
       secondary: '#334155', // bg-slate-700
-      background: '#1E293B', // bg-slate-800
-      text: '#9CA3AF', // text-gray-400
-      alttext: 'rgb(74 222 128)',
+      background: '#1e293b', // bg-slate-800
+      card: '#334155',
+      text: '#9CA3AF', // text-black
       hover: '#334155', // bg-slate-700
+      buttonsp:'#22c55e',
+      hoversp:'#16a34a',
+      textsp: '#4ade80',
+      
+      
   },
     },
   },
@@ -22,6 +27,14 @@ module.exports = {
 //        background: '#FDFBD4', // Cream
 //        text: '#810c39ff', // dark raspberry
 //        accent: '#ADEBB3', // MintGreen*/
+/*primary: '#E30B5D', // Raspberry
+      secondary: '#E89EB8', // bg-slate-700
+      background: '#FDFBD4', // bg-slate-800
+      card: '#fffeebff',
+      text: '#000000ff', // text-black
+      alttext: 'rgb(74 222 128)',
+      hover: '#E89EB8', // bg-slate-700
+  },
 
 
 // primary: '#E30B5D', // Raspberry
@@ -30,4 +43,4 @@ module.exports = {
 //        text: '#9CA3AF', // text-gray-400
 //        alttext: 'rgb(74 222 128)',
 //        hover: '#334155', // bg-slate-700
-//      },
+//      },*/

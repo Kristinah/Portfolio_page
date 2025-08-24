@@ -9,7 +9,7 @@ export default function Projects() {
     <section id="projects" className="text-text bg-background body-font">
     <div className="container px-5 py-20 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full">
-          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
+          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-primary">
            Projects
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
@@ -24,16 +24,16 @@ export default function Projects() {
       <div
               key={project.title}
               onClick={() => setSelectedProject(project)}
-              className="cursor-pointer w-full h-full p-2 shadow-xl bg-secondary hover:bg-background rounded-lg overflow-hidden max-w-md mx-auto transition-all hover:scale-105"
+              className="cursor-pointer w-full h-full p-2 shadow-xl bg-card hover:bg-background rounded-lg overflow-hidden max-w-md mx-auto transition-all hover:scale-105"
             >
       <div className="flex flex-col h-full">
       <img src={project.image} alt="image" className="h-80 w-[calc(100%-16px)] m-2 object-fill object-cover rounded bg-stone-900 mb-2" />
       
       <div className="w-full h-max rounded px-3.5 py-2.5 flex flex-col flex-grow">
-      <h1 className="title-font text-xl font-medium text-white mb-3 text-center">
+      <h1 className="title-font text-xl font-medium text-primary mb-3 text-center">
                     {project.title}
                   </h1>
-        <h2 className="tracking-widest text-center text-sm title-font font-medium text-green-400 mb-1">{project.technologies}</h2>
+        <h2 className="tracking-widest text-center text-sm title-font font-medium text-textsp mb-1">{project.technologies}</h2>
         <p className="leading-relaxed ">{project.summary}
         
         </p>
@@ -78,17 +78,17 @@ export default function Projects() {
   </div>
              <div className="flex-1 flex flex-col">
               <div className="flex items-center justify-between mb-4">
-            <h2 className="text-2xl font-bold text-white" >{selectedProject.title}</h2>
+            <h2 className="text-2xl font-bold text-primary" >{selectedProject.title}</h2>
             <button
               onClick={() => setSelectedProject(null)}
     className="px-2 py-1 rounded hover:bg-hover hover:text-white transition rounder-lg"
   >
     ✕
   </button></div>
-            <p className="text-green-400 font-semibold mb-2">
+            <p className="text-textsp font-semibold mb-2">
               {selectedProject.technologies}
             </p>
-            <p className="text-white font-semibold mb-2">
+            <p className="text-primary font-semibold mb-2">
               {selectedProject.role}
             </p>
             <p className="mb-4">{selectedProject.details || selectedProject.description}</p>
@@ -98,7 +98,7 @@ export default function Projects() {
       href={selectedProject.link}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+      className="inline-block bg-buttonsp text-white px-4 py-2 rounded hover:bg-hoversp"
     >
       Web Page
     </a>
