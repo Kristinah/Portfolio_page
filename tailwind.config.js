@@ -10,8 +10,8 @@ module.exports = {
       card: '#334155',
       text: '#9CA3AF', // text-black
       hover: '#334155', // bg-slate-700
-      buttonsp:'#22c55e',
-      hoversp:'#16a34a',
+      buttonsp:'#16a34a',
+      hoversp:'#15803d',
       textsp: '#4ade80',
       
       

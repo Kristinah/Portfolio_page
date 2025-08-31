@@ -3,7 +3,7 @@ export default function Contact() {
   return (
     <section id="contact" className="relative">
       
-      <div className="container px-5 py-5 mx-auto flex sm:flex-nowrap flex-wrap">
+      <div className="container px-4 sm:px-5 py-5 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 md:w-1/2 bg-background rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
               <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-primary">Contact Info</h1>

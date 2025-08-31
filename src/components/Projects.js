@@ -7,7 +7,7 @@ export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
   return(
     <section id="projects" className="text-text bg-background body-font">
-    <div className="container px-5 py-20 mx-auto text-center lg:px-40">
+    <div className="container px-4 sm:px-5 py-10 sm:py-20 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full">
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-primary">
            Projects
@@ -24,10 +24,10 @@ export default function Projects() {
       <div
               key={project.title}
               onClick={() => setSelectedProject(project)}
-              className="cursor-pointer w-full h-full p-2 shadow-xl bg-card hover:bg-background rounded-lg overflow-hidden max-w-md mx-auto transition-all hover:scale-105"
+              className="cursor-pointer sm:max-w-sm w-full h-full p-2 shadow-xl bg-card hover:bg-background rounded-lg overflow-hidden max-w-md mx-auto transition-all hover:scale-105"
             >
       <div className="flex flex-col h-full">
-      <img src={project.image} alt="image" className="h-80 w-[calc(100%-16px)] m-2 object-fill object-cover rounded bg-stone-900 mb-2" />
+      <img src={project.image} alt="image" className="h-60 sm:h-80 w-[calc(100%-16px)] m-2 object-fill object-cover rounded bg-stone-900 mb-2" />
       
       <div className="w-full h-max rounded px-3.5 py-2.5 flex flex-col flex-grow">
       <h1 className="title-font text-xl font-medium text-primary mb-3 text-center">
