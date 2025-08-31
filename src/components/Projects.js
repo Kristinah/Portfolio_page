@@ -88,7 +88,7 @@ export default function Projects() {
             <p className="text-textsp font-semibold mb-2">
               {selectedProject.technologies}
             </p>
-            <p className="text-primary font-semibold mb-2">
+            <p className="font-semibold mb-2">
               {selectedProject.role}
             </p>
             <p className="mb-4">{selectedProject.details || selectedProject.description}</p>

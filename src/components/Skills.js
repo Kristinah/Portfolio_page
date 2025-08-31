@@ -17,7 +17,7 @@ export default function Skills() {
         <div className="place-items-center mt-20">
           
         
-        <ul className="grid grid-cols-1 gap-4 sm:grid-cols-3 md:grid-cols-3 mx-auto ">
+        <ul className="grid grid-cols-1 gap-4 sm:grid-cols-3 md:grid-cols-3 mx-auto">
           {/* Java */}
           <li id="Java" className="flex items-center gap-3">
             <div className="w-12 h-12 shrink-0 rounded-xl text-primary flex items-center justify-center">

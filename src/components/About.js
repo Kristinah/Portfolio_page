@@ -23,7 +23,7 @@ export default function About() {
             </a>
             <a
               href="#projects"
-              className="ml-4 inline-flex text-gray-400 bg-background border-0 py-2 px-6 focus:outline-none hover:bg-hover hover:text-white rounded-lg text-lg">
+              className="ml-4 inline-flex bg-background border-0 py-2 px-6 focus:outline-none hover:bg-hover hover:text-white rounded-lg text-lg">
               See my past work
             </a>
           </div>
