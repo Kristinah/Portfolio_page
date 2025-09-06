@@ -1,5 +1,16 @@
 export const projects = [
   {
+    title: "XProject",
+    technologies: "Unity, Oculus Rift, C++, User Study",
+    summary:"Degree project on investigating the impact of visual saliency on subtle and emphasized cues in Virtual Reality.",
+    description:
+      "For my degree project, I designed and developed a fully interactive VR environment in Unity for Oculus Rift. I implemented two types of visual cues: subtle (particle effects) and emphasized (highlighting) to explore how variations in color and transparency influence player immersion and task performance. \n\nThe project involved creating a structured user study, where participants interacted with cues in different configurations (three colors and two transparency levels). Beyond building the VR application, I gained valuable experience in designing interaction systems, optimizing for VR performance and integrating research-driven design variables into gameplay mechanics. \n\nIn addition to development, I also managed the research process end-to-end: planning and structuring user tests, recruiting participants and collecting data. This project strengthened my skills in development, user-centered design, and experimental evaluation, while giving me practical insight into how design choices impact player experience.",
+    image: "/Portfolio_page/Xproject-Tree-Scene.jpg",
+    secimage:"",
+    role: "Developer and researcher",
+    link:"",
+  },
+  {
     title: "ClawCraft",
     technologies: "GoDot, Unreal Engine, Excel, Moodboard",
     summary:"Real time strategy game where cat and dogs fight for supremacy!",
@@ -15,7 +26,7 @@ export const projects = [
     technologies: "Unity, Oculus Rift, C++, User Study",
     summary:"Conducted a VR eye-tracking study where we used Unity together with Oculus Rift to explore how environmental complexity impacts cognitive load and efficiency in visual search tasks.",
     description:
-      "VR Eye-Gaze Tracking Study, which explores the impact of environmental complexity on cognitive load and efficiency in visual search tasks. This project gave me hands-on experience in coding in Unity and using Oculus Rift for user studies. We created two scenes in Unity, one simple with few objects and one complex with more ojects. The users where then tasked to find three objects in the scene by looking at them.",
+      "VR Eye-Gaze Tracking Study, which explores the impact of environmental complexity on cognitive load and efficiency in visual search tasks. This project gave me hands-on experience in coding in Unity and using Oculus Rift for user studies. \n\nWe created two scenes in Unity, one simple with few objects and one complex with more ojects. The users where then tasked to find three objects in the scene by looking at them.",
     image: "/Portfolio_page/DM2350_complex_environment.png",
     secimage:"/Portfolio_page/DM2350_simple_environment.png",
     video:"/Portfolio_page/DM2350_complex_environment.png",
@@ -27,7 +38,7 @@ export const projects = [
     technologies: "Figma, Moodboard, Wireframes, User Study",
     summary: "A mobile app fostering social activities and culturalexchange among Stockholmers, new and old!",
     description:
-      "A mobile app fostering social activities and culturalexchange among Stockholmers, new and old. After interviewing our target group, we iterated through several designs by creating low-fidelity sketches and using moodboards. We then used Figma to create a final design. To present this concept to our peers we created a short video.",
+      "A mobile app fostering social activities and culturalexchange among Stockholmers, new and old. \n\n After interviewing our target group, we iterated through several designs by creating low-fidelity sketches and using moodboards. We then used Figma to create a final design. To present this concept to our peers we created a short video.",
     image: "/Portfolio_page/Stamped-hero.png",
     secimage: "/Portfolio_page/Stamped_video.gif",
     video:"/Portfolio_page/Stamped.gif",
@@ -41,7 +52,7 @@ export const projects = [
     technologies: "Pepper API, Excel, User Study",
     summary: "In a project together with Husqvarna and Sigma, we created an interactive app for customers to help them choose which battery product suits their needs.",
     description:
-      "In a project together with Husqvarna and Sigma, we created an interactive app for customers to help them choose which battery product suits their needs. Together with the project leader, I created the logic for battery selection and refined the use case. I also conducted user studies with customers to further improve the application.",
+      "In a project together with Husqvarna and Sigma, we created an interactive app for customers to help them choose which battery product suits their needs.\n\n Together with the project leader, I created the logic for battery selection and refined the use case. I also conducted user studies with customers to further improve the application.",
     image: "/Portfolio_page/Pepper-battery-hero.png",
     video:"/Portfolio_page/Battery.gif",
     role: "Business Stakeholder",
@@ -52,7 +63,7 @@ export const projects = [
     technologies: "Pepper API, User Study",
     summary:"In 2020, I was part of a project with Husqvarna to develop another application for Pepper. This time Pepper informs customers about the covid pandemic and can also help guide them in the store.",
     description:
-      "In 2020, I was part of a project with Husqvarna to develop another application for Pepper. This time Pepper informs customers about covid and can also help guide them in the store.",
+      "In 2020, I was part of a project with Husqvarna to develop another application for Pepper. \n\nThis time Pepper informs customers about covid and can also help guide them in the store.",
     image: "/Portfolio_page/Pepper-covid-hero.png",
     video:"/Portfolio_page/Covid.gif",
     role: "Business Stakeholder",

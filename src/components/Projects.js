@@ -27,7 +27,7 @@ export default function Projects() {
               className="cursor-pointer sm:max-w-sm w-full h-full p-2 shadow-xl bg-card hover:bg-background rounded-lg overflow-hidden max-w-md mx-auto transition-all hover:scale-105"
             >
       <div className="flex flex-col h-full">
-      <img src={project.image} alt="image" className="h-60 sm:h-80 w-[calc(100%-16px)] m-2 object-fill object-cover rounded bg-stone-900 mb-2" />
+      <img src={project.image} alt="image" className="h-60 sm:h-80 w-[calc(100%-16px)] m-2 object-fill object-cover rounded bg-background mb-2" />
       
       <div className="w-full h-max rounded px-3.5 py-2.5 flex flex-col flex-grow">
       <h1 className="title-font text-xl font-medium text-primary mb-3 text-center">
@@ -91,7 +91,7 @@ export default function Projects() {
             <p className="font-semibold mb-2">
               {selectedProject.role}
             </p>
-            <p className="mb-4">{selectedProject.details || selectedProject.description}</p>
+            <p className="mb-4 whitespace-pre-line">{selectedProject.details || selectedProject.description}</p>
             <div className="mt-4">
               {selectedProject.link && (
     <a
