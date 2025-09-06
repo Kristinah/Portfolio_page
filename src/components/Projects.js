@@ -57,14 +57,14 @@ export default function Projects() {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="text-text bg-background rounded-lg max-w-2xl w-full p-6 relative flex flex-col md:flex-row gap-6"
+            className="text-text bg-background rounded-lg max-w-2xl w-full p-4 sm:p-6 relative flex flex-col md:flex-row gap-6"
           >
   <div className="flex-1 flex flex-col gap-2">
     {selectedProject.secimage && (
       <img
         src={selectedProject.secimage}
         alt="Project screenshot"
-        className="w-full h-auto rounded-lg object-cover"
+        className="w-full max-h-64 sm:max-h-96 rounded-lg object-cover"
       />
     )}
 
@@ -78,14 +78,13 @@ export default function Projects() {
   </div>
              <div className="flex-1 flex flex-col">
               <div className="flex items-center justify-between mb-4">
-            <h2 className="text-2xl font-bold text-primary" >{selectedProject.title}</h2>
+            <h2 className="sm:text-2xl text-xl font-bold text-primary" >{selectedProject.title}</h2>
             <button
               onClick={() => setSelectedProject(null)}
-    className="px-2 py-1 rounded hover:bg-hover hover:text-white transition rounder-lg"
-  >
+    className="px-2 py-1 rounded hover:bg-hover hover:text-white transition rounder-lg" >
     ✕
   </button></div>
-            <p className="text-textsp font-semibold mb-2">
+            <p className="text-sm sm:text-base text-textsp font-semibold mb-2">
               {selectedProject.technologies}
             </p>
             <p className="font-semibold mb-2">
@@ -98,7 +97,7 @@ export default function Projects() {
       href={selectedProject.link}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-block bg-buttonsp text-white px-4 py-2 rounded hover:bg-hoversp"
+      className="w-full sm:w-auto text-center bg-buttonsp text-white px-4 py-2 rounded hover:bg-hoversp"
     >
       Web Page
     </a>
