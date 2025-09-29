@@ -6,7 +6,8 @@ export const projects = [
     description:
       "For my degree project, I designed and developed a fully interactive VR environment in Unity for Oculus Rift. I implemented two types of visual cues: subtle (particle effects) and emphasized (highlighting) to explore how variations in color and transparency influence player immersion and task performance. \n\nThe project involved creating a structured user study, where participants interacted with cues in different configurations (three colors and two transparency levels). Beyond building the VR application, I gained valuable experience in designing interaction systems, optimizing for VR performance and integrating research-driven design variables into gameplay mechanics. \n\nIn addition to development, I also managed the research process end-to-end: planning and structuring user tests, recruiting participants and collecting data. This project strengthened my skills in development, user-centered design, and experimental evaluation, while giving me practical insight into how design choices impact player experience.",
     image: "/Portfolio_page/Xproject-Tree-Scene.jpg",
-    secimage:"",
+    secimage:"/Portfolio_page/XprojectHighlight.png",
+    video:"/Portfolio_page/XProject.gif",
     role: "Developer and researcher",
     link:"",
   },
@@ -16,8 +17,9 @@ export const projects = [
     summary:"Real time strategy game where cat and dogs fight for supremacy!",
     description:
       "I was mainly responsible for the game and level design. I created moodboard for five different themes, found suitable assets for the theme and created three distinct maps in GoDot. I also created a persona for our target audience. I was responsible for the game narrative and partly-responsible for the game development document.",
-    image: "/Portfolio_page/ClawCraft_Hero.png",
-    secimage:"/Portfolio_page/ClawCraft_Persona.png",
+    image: "/Portfolio_page/ClawCraftHero.png",
+    secimage:"/Portfolio_page/ClawCraftMap.png",
+    video:"",
     role: "Level designer and head of game concept",
     link:"https://clawcraft.netlify.app/",
   },
