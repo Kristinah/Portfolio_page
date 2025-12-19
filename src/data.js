@@ -1,13 +1,13 @@
 export const projects = [
   {
-    title: "XProject",
+    title: "Desigining Visual Cues for VR - A Study on Color Contrast",
     technologies: "Unity, Oculus Rift, C++, User Study",
     summary:"Degree project on investigating the impact of visual saliency on subtle and emphasized cues in Virtual Reality.",
     description:
-      "For my degree project, I designed and developed a fully interactive VR environment in Unity for Oculus Rift. I implemented two types of visual cues: subtle (particle effects) and emphasized (highlighting) to explore how variations in color and transparency influence player immersion and task performance. \n\nThe project involved creating a structured user study, where participants interacted with cues in different configurations (three colors and two transparency levels). Beyond building the VR application, I gained valuable experience in designing interaction systems, optimizing for VR performance and integrating research-driven design variables into gameplay mechanics. \n\nIn addition to development, I also managed the research process end-to-end: planning and structuring user tests, recruiting participants and collecting data. This project strengthened my skills in development, user-centered design, and experimental evaluation, while giving me practical insight into how design choices impact player experience.",
+      "I developed an interactive VR environment in Unity for Oculus Rift to investigate how visual cue design affects immersion and task performance. The project combined VR development with a controlled user study. \n\n The project strengthened my skills in user-centered design, VR interaction, and experimental evaluation, while giving me practical insight into how design choices impact player experience.",
     image: "/Portfolio_page/Xproject-Tree-Scene.jpg",
     secimage:"/Portfolio_page/XprojectHighlight.png",
-    video:"/Portfolio_page/XProject.gif",
+    video:"/Portfolio_page/XProject.mp4",
     role: "Developer and researcher",
     link:"",
   },
@@ -31,7 +31,7 @@ export const projects = [
       "VR Eye-Gaze Tracking Study, which explores the impact of environmental complexity on cognitive load and efficiency in visual search tasks. This project gave me hands-on experience in coding in Unity and using Oculus Rift for user studies. \n\nWe created two scenes in Unity, one simple with few objects and one complex with more ojects. The users where then tasked to find three objects in the scene by looking at them.",
     image: "/Portfolio_page/DM2350_complex_environment.png",
     secimage:"/Portfolio_page/DM2350_simple_environment.png",
-    video:"/Portfolio_page/DM2350_complex_environment.png",
+    video:"",
     role: "Developer",
     link:"",
   },
@@ -42,32 +42,34 @@ export const projects = [
     description:
       "A mobile app fostering social activities and culturalexchange among Stockholmers, new and old. \n\n After interviewing our target group, we iterated through several designs by creating low-fidelity sketches and using moodboards. We then used Figma to create a final design. To present this concept to our peers we created a short video.",
     image: "/Portfolio_page/Stamped-hero.png",
-    secimage: "/Portfolio_page/Stamped_video.gif",
-    video:"/Portfolio_page/Stamped.gif",
+    secimage: "/Portfolio_page/Stamped.gif",
+    video:"/Portfolio_page/Stamped-video.mp4",
     role: "Developer",
     link:"",
   },
   
   
   {
-    title: "Pepper - Battery",
+    title: "Pepper - Battery Use Case",
     technologies: "Pepper API, Excel, User Study",
     summary: "In a project together with Husqvarna and Sigma, we created an interactive app for customers to help them choose which battery product suits their needs.",
     description:
       "In a project together with Husqvarna and Sigma, we created an interactive app for customers to help them choose which battery product suits their needs.\n\n Together with the project leader, I created the logic for battery selection and refined the use case. I also conducted user studies with customers to further improve the application.",
     image: "/Portfolio_page/Pepper-battery-hero.png",
-    video:"/Portfolio_page/Battery.gif",
+    video:"",
+    secimage:"/Portfolio_page/Battery.gif",
     role: "Business Stakeholder",
     link:"",
   },
   {
-    title: "Pepper - Covid",
+    title: "Pepper - Covid Use Case",
     technologies: "Pepper API, User Study",
     summary:"In 2020, I was part of a project with Husqvarna to develop another application for Pepper. This time Pepper informs customers about the covid pandemic and can also help guide them in the store.",
     description:
       "In 2020, I was part of a project with Husqvarna to develop another application for Pepper. \n\nThis time Pepper informs customers about covid and can also help guide them in the store.",
     image: "/Portfolio_page/Pepper-covid-hero.png",
-    video:"/Portfolio_page/Covid.gif",
+    video:"",
+    secimage:"/Portfolio_page/Covid.gif",
     role: "Business Stakeholder",
     link:"",
   },

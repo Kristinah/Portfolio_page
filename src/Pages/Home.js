@@ -27,7 +27,7 @@ export default function Home() {
       <section id="contact">
         <Contact />
         </section>
-
+      
       
     </main>
   );
