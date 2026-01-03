@@ -57,7 +57,7 @@ export default function Projects() {
   >
     <div
       onClick={(e) => e.stopPropagation()}
-      className="text-text bg-background rounded-lg max-w-3xl w-full p-4 sm:p-6 relative flex flex-col gap-4"
+      className="text-text bg-background rounded-lg max-w-3xl w-full max-h-[90vh] p-4 sm:p-6 relative flex flex-col gap-4 overflow-hidden"
     >
       {/* Header */}
       <div className="flex items-center justify-between">
@@ -71,7 +71,7 @@ export default function Projects() {
           ✕
         </button>
       </div>
-
+        <div className="flex-1 overflow-y-auto pr-1 flex flex-col gap-4">
       {/* Video – full width */}
       {selectedProject.video && (
         <video
@@ -81,13 +81,12 @@ export default function Projects() {
           muted
           playsInline
           controls
-          className="w-full rounded-lg object-cover"
+          className="w-full rounded-lg object-contain"
         />
       )}
 
       {/* Two-column section */}
       <div className="flex flex-col md:flex-row gap-6">
-        {/* LEFT COLUMN – extra images */}
         <div className="md:w-1/2 flex flex-col gap-3">
           {selectedProject.secimage && (
             <img
@@ -105,8 +104,6 @@ export default function Projects() {
             />
           )}
         </div>
-
-        {/* RIGHT COLUMN – text */}
         <div className="md:w-1/2 flex flex-col">
           <p className="text-sm sm:text-base text-textsp font-semibold mb-2">
             {selectedProject.technologies}
@@ -131,6 +128,7 @@ export default function Projects() {
             </a>
           )}
         </div>
+      </div>
       </div>
     </div>
   </div>

@@ -1,14 +1,14 @@
 export const projects = [
   {
-    title: "Desigining Visual Cues for VR - A Study on Color Contrast",
+    title: "Designing Visual Cues for VR - A Study on Color Contrast",
     technologies: "Unity, Oculus Rift, C++, User Study",
-    summary:"Degree project on investigating the impact of visual saliency on subtle and emphasized cues in Virtual Reality.",
+    summary:"Degree project on visual saliency and cue design in Virtual Reality.",
     description:
-      "I developed an interactive VR environment in Unity for Oculus Rift to investigate how visual cue design affects immersion and task performance. The project combined VR development with a controlled user study. \n\n The project strengthened my skills in user-centered design, VR interaction, and experimental evaluation, while giving me practical insight into how design choices impact player experience.",
-    image: "/Portfolio_page/Xproject-Tree-Scene.jpg",
-    secimage:"/Portfolio_page/XprojectHighlight.png",
+      "I developed an interactive VR environment for Oculus Rift to investigate how visual cue design affects player immersion and task performance. A controlled user study was conducted to evaluate the different cue designs. \n\n The project strengthened my skills in user-centered design, VR interaction and experimental evaluation. In addtion the project also gave me practical insight into how design choices impact player experience.",
+    image: "/Portfolio_page/XProject-Tree-Scene.jpg",
+    secimage:"/Portfolio_page/XProjectHighlight.png",
     video:"/Portfolio_page/XProject.mp4",
-    role: "Developer and researcher",
+    role: "Developer and Researcher",
     link:"",
   },
   {
